@@ -123,9 +123,10 @@ select {
   margin-top: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .flex-container {
     flex-direction: column;
+    width: 80%;
   }
 
   * {
@@ -133,7 +134,8 @@ select {
   }
 
   .player-image {
-    height: 80px;
+    padding-top: 10px;
+    height: 50px;
   }
 
   .player {
@@ -145,6 +147,29 @@ select {
   }
 
   .flex-container .column {
+    margin: 5px;
+  }
+
+  button {
+    padding: 2px;
+    width: 60px;
+  }
+
+  .winner {
+    height: 45px;
+    margin: 3px auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container .column {
     margin: 10px;
+  }
+  .weaponBtn {
+    margin: auto 15px;
   }
 }
